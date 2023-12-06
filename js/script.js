@@ -8,3 +8,10 @@ var swiper = new Swiper('.promo__swiper', {
   },
 });
 Fancybox.bind('[data-fancybox]', {});
+
+const menuBtn = document.querySelector('.button--mobile');
+const menuMobile = document.querySelector('.header__menu-wrapper');
+
+menuBtn.addEventListener('click', () => {
+  menuMobile.classList.toggle('nav--open');
+});
